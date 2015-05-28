@@ -52,6 +52,7 @@
       <sprite>sprites\spr_GrassTile</sprite>
       <sprite>sprites\spr_GrassTileRight</sprite>
       <sprite>sprites\spr_GrassTileLeft</sprite>
+      <sprite>sprites\spr_DirtTile</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -297,6 +298,7 @@
     <object>objects\obj_sun</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_GrassBlock</object>
+    <object>objects\obj_DirtBlock</object>
     <object>objects\obj_GrassCenter</object>
   </objects>
   <rooms name="rooms">

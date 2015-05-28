@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sun = glr_light_create(spr_light_mask_inf, 0, x, y, c_white, 60);
-glr_light_set_shadow_strength(sun, .6)
-glr_light_set_tolerance(sun, .5)
+            <string>sun = glr_light_create(spr_light_mask_inf, 0, x, y, c_white, 10);
+glr_light_set_shadow_strength(sun, .1)
+glr_light_set_tolerance(sun, .3)
 </string>
           </argument>
         </arguments>
