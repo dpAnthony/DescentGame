@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>glr_init(1);
+glr_enable_fxaa(true)
+glr_set_ambient_daytime(.5)
+glr_enable_directional(true)
+glr_set_directional_quality(1)
 </string>
           </argument>
         </arguments>
