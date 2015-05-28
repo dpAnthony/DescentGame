@@ -50,7 +50,7 @@ glr_light_set_tolerance(sun, .5)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//glr_light_refresh(sun)
+            <string>glr_light_refresh(sun)
 </string>
           </argument>
         </arguments>

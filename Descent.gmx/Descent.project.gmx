@@ -47,6 +47,8 @@
     </sprites>
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\sprite30</sprite>
+    <sprite>sprites\spr_GrassTile</sprite>
+    <sprite>sprites\sprGrassBrushRight</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -253,18 +255,6 @@
         </scripts>
       </scripts>
     </scripts>
-    <scripts name="Glare demo">
-      <scripts name="misc">
-        <script>scripts\glrtest_string_onoff.gml</script>
-        <script>scripts\glrtest_text_pressed.gml</script>
-        <script>scripts\glrtest_text_hold.gml</script>
-      </scripts>
-      <script>scripts\glrtest_gui_mobile.gml</script>
-      <script>scripts\glrtest_gui_desktop.gml</script>
-      <script>scripts\glrtest_get_illumination.gml</script>
-      <script>scripts\glrtest_autotile.gml</script>
-      <script>scripts\glrtest_show_matrix.gml</script>
-    </scripts>
   </scripts>
   <shaders name="shaders">
     <shaders name="Glare">
@@ -302,6 +292,8 @@
     <object>objects\obj_Player</object>
     <object>objects\obj_sun</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_GrassBlock</object>
+    <object>objects\obj_GrassCenter</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Glare">
