@@ -25,11 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>glr_init(1);
+            <string>//variables
+globalvar levelWidth;   //width of the current level
+globalvar levelHeight;  //height of the current level
+globalvar tileSize;     //length of tile edges
+globalvar sprScale;     //scales all sprites
+
+//booleans
+
+//arrays
+
+
+//Lighting Init.
+
+glr_init(1);
 glr_enable_fxaa(true)
 glr_set_ambient_daytime(.5)
 glr_enable_directional(true)
 glr_set_directional_quality(1)
+
+//Screen Optimization
+window_set_fullscreen(false)
+
+//statics
+levelWidth = room_width/32;
+levelHeight = room_height/32;
+tileSize = 32;
+sprScale = 1;
+room_speed = 60
 </string>
           </argument>
         </arguments>

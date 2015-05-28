@@ -260,6 +260,8 @@
         </scripts>
       </scripts>
     </scripts>
+    <script>scripts\GenerateTerrain.gml</script>
+    <script>scripts\PlaceBlock.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="Glare">
@@ -293,7 +295,7 @@
     </fonts>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_controller</object>
+    <object>objects\obj_Engine</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_sun</object>
     <object>objects\obj_camera</object>
