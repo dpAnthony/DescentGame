@@ -47,8 +47,13 @@
     </sprites>
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\sprite30</sprite>
-    <sprite>sprites\spr_GrassTile</sprite>
-    <sprite>sprites\sprGrassBrushRight</sprite>
+    <sprites name="Terrain">
+      <sprite>sprites\spr_GrassTile1</sprite>
+      <sprite>sprites\spr_GrassTile2</sprite>
+      <sprite>sprites\spr_GrassTile3</sprite>
+      <sprite>sprites\spr_GrassTileRight</sprite>
+      <sprite>sprites\spr_GrassBrushRight</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
