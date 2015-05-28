@@ -46,6 +46,7 @@
       <sprite>sprites\spr_PlayerPush</sprite>
     </sprites>
     <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
