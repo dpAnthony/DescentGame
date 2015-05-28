@@ -298,7 +298,6 @@
     <object>objects\obj_sun</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_GrassBlock</object>
-    <object>objects\obj_DirtBlock</object>
     <object>objects\obj_GrassCenter</object>
   </objects>
   <rooms name="rooms">

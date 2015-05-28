@@ -25,19 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//sets the grass to fade to the right or left depending on where the dirt block is
+            <string>mesh_id = glr_mesh_create(x,y,false);
+glr_mesh_submesh_add_json(mesh_id, "[[-32,-32],[32,-32],[32,32],[-32,32]]", 0, 0);
+glr_mesh_set_depth(mesh_id, 1000);
+glr_mesh_update(mesh_id);
+
+//sets the grass to fade to the right or left depending on where the dirt block is
 image_speed = 0;
-if place_meeting(x - 1,0, obj_DirtBlock) then {
-   //not working?
-   image_index = 3;
-}
-else if place_meeting(x + 1,0, obj_DirtBlock) then {
-     image_index = 4;
-}
+if irandom(4) = 4 then image_index = 6; 
 else {
-//else randomizes it between the other options
-image_index = (irandom(3) - 1);
+   image_index = irandom(3) - 1;
 }
+//Checks if there is a dirt block to the right
+var inst;
+inst = instance_place(x + 1,0, obj_GrassBlock);
+if inst != noone then {
+   if inst.image_index = 6 then {
+     image_index = 4;
+     }
+}
+//checks if there is a block above
+if place_meeting(0,y+1,obj_GrassBlock) {
+   image_index = 7;
+}
+
 </string>
           </argument>
         </arguments>

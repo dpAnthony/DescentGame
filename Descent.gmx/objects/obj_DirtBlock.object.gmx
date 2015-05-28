@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//sets the dirt block to the right sprite depending on what's above it (not working)
+            <string>mesh_id = glr_mesh_create(x,y,false);
+glr_mesh_submesh_add_json(mesh_id, "[[-32,-32],[32,-32],[32,32],[-32,32]]", 0, 0);
+glr_mesh_set_depth(mesh_id, 1000);
+glr_mesh_update(mesh_id);
+
+
+//sets the dirt block to the right sprite depending on what's above it (not working)
 image_speed = 0;
 if place_meeting(0,y+1,obj_DirtBlock) {
    image_index = 1;
