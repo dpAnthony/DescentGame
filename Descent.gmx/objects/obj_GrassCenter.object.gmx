@@ -49,7 +49,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_index = 0 { //&amp;&amp; place_meeting(0,0,obj_Player) then {
+            <string>if image_index = 0 &amp; place_meeting(0,0,obj_Player) then {
    image_speed = 1;
 }
 if image_index = 8 then image_speed = 0;
