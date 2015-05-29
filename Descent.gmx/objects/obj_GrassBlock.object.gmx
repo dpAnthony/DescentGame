@@ -32,16 +32,23 @@ glr_mesh_update(mesh_id);
 
 //sets the grass to fade to the right or left depending on where the dirt block is
 image_speed = 0;
-if irandom(4) = 4 then image_index = 6; 
+if irandom(4) = 4 then image_index = 5; 
 else {
    image_index = irandom(3) - 1;
 }
 //Checks if there is a dirt block to the right
 var inst;
-inst = instance_place(x + 1,0, obj_GrassBlock);
+inst = instance_place(x + 17,0, obj_GrassBlock);
 if inst != noone then {
-   if inst.image_index = 6 then {
+   if inst.image_index = 5 then {
      image_index = 4;
+     }
+}
+var inst;
+inst = instance_place(x - 17,0, obj_GrassBlock);
+if inst != noone then {
+   if inst.image_index = 5 then {
+     image_index = 3;
      }
 }
 //checks if there is a block above
