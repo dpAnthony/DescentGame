@@ -57,7 +57,7 @@ glr_mesh_update(mesh_id);
 
 if keyboard_check_pressed(ord('A'))
 {
-    hspeed = -10
+    hspeed = -5
 }
 if keyboard_check_released(ord('A'))
 {
@@ -65,7 +65,7 @@ if keyboard_check_released(ord('A'))
 }
 if keyboard_check_pressed(ord('D'))
 {
-    hspeed = 10
+    hspeed = 5
 }
 if keyboard_check_released(ord('D'))
 {

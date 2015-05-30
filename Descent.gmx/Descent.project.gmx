@@ -74,6 +74,7 @@
       <sprite>sprites\spr_GrassTileRight</sprite>
       <sprite>sprites\spr_GrassTileLeft</sprite>
       <sprite>sprites\spr_DirtTile</sprite>
+      <sprite>sprites\spr_TreeThin</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -322,6 +323,8 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_GrassBlock</object>
     <object>objects\obj_GrassCenter</object>
+    <object>objects\obj_TreeThinBack</object>
+    <object>objects\Obj_TreeThinFront</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Level</room>

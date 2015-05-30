@@ -43,6 +43,7 @@ glr_enable_fxaa(true)
 glr_set_ambient_daytime(.5)
 glr_enable_directional(true)
 glr_set_directional_quality(1)
+glr_draw_gamma(true);
 
 //Screen Optimization
 window_set_fullscreen(false)
