@@ -3,6 +3,27 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafiles number="1" name="levels">
+      <datafile>
+        <name>Level.txt</name>
+        <exists>-1</exists>
+        <size>24248</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Level.txt</filename>
+      </datafile>
+    </datafiles>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\Glare Engine - 2D illumination</extension>
   </NewExtensions>
@@ -261,7 +282,7 @@
       </scripts>
     </scripts>
     <script>scripts\GenerateTerrain.gml</script>
-    <script>scripts\PlaceBlock.gml</script>
+    <script>scripts\PlaceTerrain.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="Glare">
@@ -297,15 +318,13 @@
   <objects name="objects">
     <object>objects\obj_Engine</object>
     <object>objects\obj_Player</object>
-    <object>objects\obj_sun</object>
+    <object>objects\obj_Sight</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_GrassBlock</object>
     <object>objects\obj_GrassCenter</object>
   </objects>
   <rooms name="rooms">
-    <rooms name="Glare">
-      <room>rooms\room_glare_init</room>
-    </rooms>
+    <room>rooms\rm_Level</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

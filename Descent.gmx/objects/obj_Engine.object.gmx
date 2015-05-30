@@ -53,6 +53,9 @@ levelHeight = room_height/32;
 tileSize = 32;
 sprScale = 1;
 room_speed = 60
+
+//start-up
+GenerateTerrain("Level.txt");
 </string>
           </argument>
         </arguments>

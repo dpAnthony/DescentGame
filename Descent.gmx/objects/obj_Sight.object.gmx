@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sun = glr_light_create(spr_light_mask_inf, 0, x, y, c_white, 10);
-glr_light_set_shadow_strength(sun, .1)
-glr_light_set_tolerance(sun, .3)
+            <string>sight = glr_light_create(spr_light_mask_point, 0, x, y, c_white, .1);
 </string>
           </argument>
         </arguments>
@@ -50,7 +48,11 @@ glr_light_set_tolerance(sun, .3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>glr_light_refresh(sun)
+            <string>glr_light_refresh(sight)
+
+if object_exists(obj_Player) {
+    glr_light_set_position(sight, obj_Player.x, obj_Player.y)
+}
 </string>
           </argument>
         </arguments>
